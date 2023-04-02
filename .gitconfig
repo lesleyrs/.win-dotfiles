@@ -1,0 +1,17 @@
+[core]
+	editor = hx
+[user]
+	name = lesleyrs
+	email = 19632758+lesleyrs@users.noreply.github.com
+[color]
+	ui = auto
+[alias]
+	ch = checkout
+	br = branch
+	co = commit
+	s = status
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
