@@ -14,6 +14,7 @@ end
 
 -- For example, changing the color scheme:
 config.color_scheme = 'Konsolas'
+config.colors = { selection_fg = 'black', selection_bg = 'grey' }
 wezterm.on("gui-startup", function(cmd)
   local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
   window:gui_window():toggle_fullscreen()
@@ -22,7 +23,7 @@ config.default_prog = { 'pwsh.exe' }
 config.default_cwd = wezterm.home_dir .. '/Documents'
 config.keys = {
   { key = 'w', mods = 'CTRL|SHIFT', action = 'DisableDefaultAssignment', },
-  { key = 'w', mods = 'CTRL|SHIFT', action = wezterm.action.CloseCurrentPane { confirm = true },},
+  { key = 'w', mods = 'CTRL|SHIFT', action = wezterm.action.CloseCurrentPane { confirm = false },},
   { key = 'UpArrow', mods = 'SHIFT', action = wezterm.action.ScrollByLine(-3) },
   { key = 'DownArrow', mods = 'SHIFT', action = wezterm.action.ScrollByLine(3) },
 }
