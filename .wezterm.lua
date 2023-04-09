@@ -24,13 +24,13 @@ config.default_cwd = wezterm.home_dir .. '/Documents'
 config.keys = {
   { key = 'w', mods = 'CTRL|SHIFT', action = 'DisableDefaultAssignment', },
   { key = 'w', mods = 'CTRL|SHIFT', action = wezterm.action.CloseCurrentPane { confirm = false },},
-  { key = 'UpArrow', mods = 'SHIFT', action = wezterm.action.ScrollByLine(-3) },
-  { key = 'DownArrow', mods = 'SHIFT', action = wezterm.action.ScrollByLine(3) },
+  -- { key = 'UpArrow', mods = 'SHIFT', action = wezterm.action.ScrollByLine(-3) },
+  -- { key = 'DownArrow', mods = 'SHIFT', action = wezterm.action.ScrollByLine(3) },
 }
 config.adjust_window_size_when_changing_font_size = false
 config.use_fancy_tab_bar = false
 config.enable_tab_bar = false
--- config.enable_kitty_keyboard = true
+config.enable_kitty_keyboard = true
 -- config.use_dead_keys = false
 -- config.enable_scroll_bar = true
 config.window_padding = {
@@ -39,6 +39,7 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
+config.check_for_updates = false
 
 -- and finally, return the configuration to wezterm
 return config
