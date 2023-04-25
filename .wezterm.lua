@@ -15,10 +15,10 @@ end
 -- For example, changing the color scheme:
 config.color_scheme = 'Konsolas'
 config.colors = { selection_fg = 'black', selection_bg = 'grey' }
-wezterm.on("gui-startup", function(cmd)
-  local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
-  window:gui_window():toggle_fullscreen()
-end)
+-- wezterm.on("gui-startup", function(cmd)
+--   local tab, pane, window = wezterm.mux.spawn_window(cmd or {})
+--   window:gui_window():toggle_fullscreen()
+-- end)
 config.default_prog = { 'pwsh.exe' }
 config.default_cwd = wezterm.home_dir .. '/Documents'
 config.keys = {
