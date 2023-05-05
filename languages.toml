@@ -6,5 +6,9 @@ language-server = { command = "rustup", args = ["run", "stable", "rust-analyzer"
 checkOnSave = { command = "clippy" }
 
 [[language]]
+name = "cpp"
+auto-format = true
+
+[[language]]
 name = "gdscript"
 language-server = { command = "ncat", args = ["localhost", "6005"], language-id = "gdscript" }
