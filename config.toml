@@ -1,4 +1,4 @@
-theme = "tokyonight"
+theme = "kanagawa"
 
 [editor]
 line-number = "relative"
@@ -18,12 +18,11 @@ display-messages = true
 [keys.normal]
 "P" = "paste_after"
 "p" = "paste_before"
+"minus" = ":sh cmake --build build && fd .exe build > build.bat && build.bat"
+"=" = ":toggle lsp.display-inlay-hints"
+"_" = ":sh start ."
+"+" = ":sh cargo r"
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"
 "p" = "paste_clipboard_before"
-
-[keys.normal."+"]
-"+" = ":sh cargo run"
-"=" = ":toggle lsp.display-inlay-hints"
-"minus" = ":sh start ."
