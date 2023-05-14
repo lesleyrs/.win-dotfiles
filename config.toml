@@ -3,7 +3,6 @@ theme = "kanagawa"
 [editor]
 line-number = "relative"
 mouse = false
-# bufferline = "multiple"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -15,7 +14,6 @@ hidden = false
 
 [editor.lsp]
 display-messages = true
-# display-inlay-hints = true
 
 [editor.soft-wrap]
 enable = true
