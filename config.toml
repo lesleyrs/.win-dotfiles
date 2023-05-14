@@ -25,7 +25,7 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 [keys.normal]
 "P" = "paste_after"
 "p" = "paste_before"
-"minus" = ":sh cmake --build build && echo off && fd .exe build > run.bat && run.bat && rm run.bat"
+"minus" = ":sh cmake --build build && echo off && fd .exe build -d 1 > run.bat && run.bat && rm run.bat"
 "=" = ":toggle lsp.display-inlay-hints"
 "_" = ":sh start ."
 "+" = ":sh clang++ main.cpp && echo off && fd .exe > run.bat && run.bat && rm run.bat"
