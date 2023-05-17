@@ -25,10 +25,10 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 [keys.normal]
 "P" = "paste_after"
 "p" = "paste_before"
-"minus" = ":sh cmake --build build && echo off && fd .exe build -d 1 > run.bat && run.bat && rm run.bat"
-"=" = ":toggle lsp.display-inlay-hints"
 "_" = ":sh start ."
-"+" = ":sh clang++ main.cpp && echo off && fd .exe > run.bat && run.bat && rm run.bat"
+"+" = ":toggle lsp.display-inlay-hints"
+"minus" = ":sh cmake --build build && echo off && fd .exe build -d 1 > run.bat && run.bat && rm run.bat"
+"=" = ":sh cd web && emmake make"
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"
