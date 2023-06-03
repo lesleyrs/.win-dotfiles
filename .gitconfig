@@ -10,6 +10,7 @@
 	br = branch
 	co = commit
 	s = status
+	d = diff
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
