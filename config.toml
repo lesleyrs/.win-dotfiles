@@ -27,8 +27,9 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "p" = "paste_before"
 "_" = ":sh start ."
 "+" = ":toggle lsp.display-inlay-hints"
-"minus" = ":sh cmake --build build && echo off && fd .exe build -d 1 > run.bat && run.bat && rm run.bat"
-"=" = ":sh cd web && emmake make"
+"minus" = ":sh make run -s"
+"=" = ":sh godot -q"
+# "=" = ":sh cargo run -q"
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"
