@@ -27,8 +27,9 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "p" = "paste_before"
 "_" = ":sh start ."
 "+" = ":toggle lsp.display-inlay-hints"
-"minus" = ":sh make run -s"
-"=" = ":sh godot_console -q"
+"minus" = ":sh make run -s -j4"
+"=" = ":sh make kill -s"
+# "=" = ":sh godot -q"
 # "=" = ":sh cargo run -q"
 
 [keys.normal." "]
