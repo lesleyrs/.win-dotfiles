@@ -12,7 +12,3 @@ auto-format = true
 [[language]]
 name = "c"
 auto-format = true
-
-[[language]]
-name = "gdscript"
-language-server = { command = "ncat", args = ["localhost", "6005"], language-id = "gdscript" }
