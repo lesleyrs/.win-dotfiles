@@ -1,8 +1,4 @@
-[[language]]
-name = "rust"
-language-server = { command = "rustup", args = ["run", "stable", "rust-analyzer"] }
-
-[language.config]
+[language-server.rust-analyzer.config]
 checkOnSave = { command = "clippy" }
 
 [[language]]
