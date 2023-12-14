@@ -27,9 +27,9 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "p" = "paste_before"
 "F1" = ":sh start ."
 "F2" = ":toggle lsp.display-inlay-hints"
+"F3" = ":sh make web -s -j4"
 "minus" = ":sh make run -s -j4"
 "=" = ":sh make kill -s"
-"+" = ":sh cargo run -q"
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"
