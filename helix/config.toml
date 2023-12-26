@@ -27,7 +27,7 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "p" = "paste_before"
 "F1" = ":sh start ."
 "F2" = ":toggle lsp.display-inlay-hints"
-"F3" = ":sh make web -s -j8"
+"F3" = ":sh emmake make -s -j8"
 "minus" = ":sh make run -s -j8"
 "=" = ":sh make kill -s"
 
