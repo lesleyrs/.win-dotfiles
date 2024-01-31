@@ -2,7 +2,7 @@ if ($args[0] -eq "-h" -or $args[0] -eq "--help") {
 	Write-Host "This is a minimal wrapper for fzf, get it from Winget or https://github.com/junegunn/fzf" -ForegroundColor Yellow
 	Write-Host "Edit the default vars in this file, use --no-deps/-n, or pass these in order: root, edit, cat, ls, find"
 	Write-Host "Root is the search root, text files are opened with edit, find searches and the others are visuals"
-	Write-Host "Paths with spaces in them don't show their previews, wasn't able to fix it`n"
+	Write-Host "Paths with spaces in them don't show their previews, thx micro`$oft`n"
     exit
 } elseif ($args[0] -eq "-n" -or $args[0] -eq "--no-deps") {
 	$root = if ($args[1]) { $args[1] } else { '~' }
