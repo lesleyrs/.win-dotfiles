@@ -13,18 +13,18 @@ function CDDoubleDot {
 	cd..
 }
 
-function GitClone {
-	git clone $args
-}
-
 function ExplorerDot {
 	explorer .
 }
 
 function WingetUpdate {
-    winget update
+    winget update $args
+}
+
+function GitClone {
+	git clone $args
 }
 
 function EzaALH {
-	eza -alh
+	eza -alh $args
 }
