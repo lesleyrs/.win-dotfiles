@@ -3,7 +3,7 @@ Set-Alias gu gitui -Force
 Set-Alias lg lazygit
 Set-Alias ll eza
 
-Set-Alias gc Clone -Force
+Set-Alias gc GitClone -Force
 Set-Alias c CDDoubleDot
 Set-Alias e ExplorerDot
 Set-Alias u WingetUpdate
@@ -13,8 +13,8 @@ function CDDoubleDot {
 	cd..
 }
 
-function Clone {
-	git clone
+function GitClone {
+	git clone $args
 }
 
 function ExplorerDot {
