@@ -7,7 +7,17 @@ Set-Alias gc GitClone -Force
 Set-Alias c CDDoubleDot
 Set-Alias e ExplorerDot
 Set-Alias u WingetUpdate
+Set-Alias gd GitDiff
+Set-Alias gn GitNote
 Set-Alias gf GitFix
+
+function GitDiff {
+	git status && git diff
+}
+
+function GitNote {
+	git add . && git commit -m "note" && git push
+}
 
 function GitFix {
 	git add . && git commit -m "fix" && git push
