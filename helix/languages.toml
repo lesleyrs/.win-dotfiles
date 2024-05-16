@@ -8,3 +8,7 @@ auto-format = true
 [[language]]
 name = "c"
 auto-format = true
+
+[[language]]
+name = "go"
+formatter = { command = "goimports" }
