@@ -5,6 +5,8 @@
 	email = 19632758+lesleyrs@users.noreply.github.com
 [color]
 	ui = auto
+[pull]
+	rebase = true
 [alias]
 	ch = checkout
 	br = branch
