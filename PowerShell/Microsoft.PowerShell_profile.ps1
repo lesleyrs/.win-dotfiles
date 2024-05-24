@@ -4,13 +4,13 @@ Set-Alias lg lazygit
 Set-Alias l ls
 
 Set-Alias gc GitClone -Force
+Set-Alias gp GitPull -Force
 Set-Alias c CDDoubleDot
 Set-Alias e ExplorerDot
 Set-Alias u WingetUpdate
 Set-Alias gd GitDiff
 Set-Alias gn GitNote
 Set-Alias gf GitFix
-Set-Alias gp GitPull
 
 function GitDiff {
 	git status && git diff
