@@ -10,6 +10,7 @@ Set-Alias u WingetUpdate
 Set-Alias gd GitDiff
 Set-Alias gn GitNote
 Set-Alias gf GitFix
+Set-Alias gp GitPull
 
 function GitDiff {
 	git status && git diff
@@ -21,6 +22,10 @@ function GitNote {
 
 function GitFix {
 	git add . && git commit -m "fix" && git push
+}
+
+function GitPull {
+	git pull --no-rebase
 }
 
 function CDDoubleDot {
