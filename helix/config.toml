@@ -29,10 +29,8 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "F2" = ":toggle lsp.display-inlay-hints"
 "F3" = ":yank-diagnostic"
 "F4" = [":format", ":w"]
-"F5" = ":sh emmake make noob -s -j8"
-"F6" = ":sh cmake --build build -j8 && start build/game"
-"minus" = ":sh make run -s -j8"
-"=" = ":sh make kill -s"
+"minus" = [":w", ":sh cmake --build build -j8 >nul && start build/App"]
+"=" = [":w", ":sh make -s -j8"]
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"

@@ -11,6 +11,11 @@ Set-Alias u WingetUpdate
 Set-Alias gd GitDiff
 Set-Alias gn GitNote
 Set-Alias gf GitFix
+Set-Alias gs GitStatus
+
+function GitStatus {
+	git status
+}
 
 function GitDiff {
 	git status && git diff
