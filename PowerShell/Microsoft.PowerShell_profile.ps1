@@ -1,5 +1,5 @@
-Set-Alias nv nvim -Force
-Set-Alias gu gitui -Force
+# Set-Alias nv nvim -Force
+# Set-Alias gu gitui -Force
 Set-Alias lg lazygit
 Set-Alias l ls
 
