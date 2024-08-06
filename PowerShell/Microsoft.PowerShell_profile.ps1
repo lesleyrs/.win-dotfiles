@@ -12,6 +12,11 @@ Set-Alias gd GitDiff
 Set-Alias gn GitNote
 Set-Alias gf GitFix
 Set-Alias gs GitStatus
+Set-Alias gl GitLogP -Force
+
+function GitLogP {
+	git log -p
+}
 
 function GitStatus {
 	git status
