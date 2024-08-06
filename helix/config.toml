@@ -1,4 +1,4 @@
-theme = "kanagawa"
+theme = "autumn"
 
 [editor]
 line-number = "relative"
@@ -29,9 +29,8 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "F2" = ":toggle lsp.display-inlay-hints"
 "F3" = ":yank-diagnostic"
 "F4" = [":format", ":w"]
-# "F5" = [":w", ":sh make -s -j8"]
 "minus" = [":w", ":sh cmake --build build -j8 >nul && build\\App"]
-"=" = [":w", ":sh MSBuild.exe -m -noLogo -v:quiet || exit /b 0"]
+"=" = [":w", ":sh MSBuild.exe -m -noLogo -v:quiet && x64\\Debug\\HelloWorld"]
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"
