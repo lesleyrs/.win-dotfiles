@@ -29,8 +29,7 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "F2" = ":toggle lsp.display-inlay-hints"
 "F3" = ":yank-diagnostic"
 "F4" = [":format", ":w"]
-"minus" = [":w", ":sh cmake --build build -j8 >nul && build\\App"]
-"=" = [":w", ":sh MSBuild.exe -m -noLogo -v:quiet && x64\\Debug\\HelloWorld"]
+"minus" = [":w", ":sh cmake --build out/build/x64-Debug -j8 >nul && out\\build\\x64-Debug\\App.exe"]
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"
