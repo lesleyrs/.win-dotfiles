@@ -35,7 +35,7 @@ function GitFix {
 }
 
 function GitPull {
-	git pull --no-rebase
+	git pull --rebase
 }
 
 function CDDoubleDot {
