@@ -15,15 +15,15 @@ Set-Alias gs GitStatus
 Set-Alias gl GitLogP -Force
 
 function GitLogP {
-	git log -p
+	git log -p $args
 }
 
 function GitStatus {
-	git status
+	git status $args
 }
 
 function GitDiff {
-	git status && git diff
+	git status && git diff $args
 }
 
 function GitNote {
