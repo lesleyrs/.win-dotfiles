@@ -29,8 +29,8 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "F2" = ":toggle lsp.display-inlay-hints"
 "F3" = ":yank-diagnostic"
 "F4" = [":format", ":w"]
-"F5" = [":w", ":sh cmake --build out/build/x64-Debug -j8 && out\\build\\x64-Debug\\App.exe"]
-"minus" = [":w", ":sh cmake --build out/build/x64-Debug -j8 >nul && out\\build\\x64-Debug\\App.exe >nul"]
+"F5" = [":w", ":sh taskkill /IM App.exe >nul & cmake --build out/build/x64-Debug -j8 && out\\build\\x64-Debug\\App.exe"]
+"minus" = [":w", ":sh taskkill /IM App.exe >nul & cmake --build out/build/x64-Debug -j8 >nul && out\\build\\x64-Debug\\App.exe >nul"]
 "=" = ":sh taskkill /F /IM App.exe >nul"
 
 [keys.normal." "]
