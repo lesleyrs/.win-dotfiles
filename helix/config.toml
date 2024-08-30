@@ -30,8 +30,10 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "F3" = ":yank-diagnostic"
 "F4" = [":format", ":w"]
 "F5" = [":w", ":sh taskkill /IM App.exe >nul & cmake --build out/build/x64-Debug -j8 && out\\build\\x64-Debug\\App.exe"]
-"minus" = [":w", ":sh taskkill /IM App.exe >nul & cmake --build out/build/x64-Debug -j8 >nul && out\\build\\x64-Debug\\App.exe >nul"]
-"=" = ":sh taskkill /F /IM App.exe >nul"
+"F6" = [":w", ":sh taskkill /IM App.exe >nul & cmake --build out/build/x64-Debug -j8 >nul && out\\build\\x64-Debug\\App.exe >nul"]
+"F7" = ":sh taskkill /F /IM App.exe >nul"
+"minus" = [":w", ":sh taskkill /IM lobster.exe >nul & lobster main.lobster"]
+"=" = ":sh taskkill /F /IM lobster.exe >nul"
 
 [keys.normal." "]
 "P" = "paste_clipboard_after"
