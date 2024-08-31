@@ -15,11 +15,13 @@ name = "go"
 formatter = { command = "goimports" }
 
 [language-server.lobster]
-command = "lobster_lsp"
-args = ["--stdio"]
+command = "node"
+args = ["lobster_lsp.js", "--stdio"]
 
 [[language]]
 name = "lobster"
 language-servers = ["lobster"]
-scope = "source.python"
+scope = "source.lobster"
 file-types = ["lobster"]
+comment-tokens = ["//"]
+block-comment-tokens = [{ start = "/*", end = "*/" }]
