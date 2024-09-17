@@ -23,6 +23,11 @@ left = ["mode", "spinner", "file-name", "version-control", "file-modification-in
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending"]
 
 [keys.normal]
+"C-z" = "completion"
+"C-j" = "kill_to_line_start"
+"C-k" = "kill_to_line_end"
+"C-n" = "delete_word_backward"
+"C-m" = "delete_word_forward"
 "P" = "paste_after"
 "p" = "paste_before"
 "F1" = ":sh start ."
