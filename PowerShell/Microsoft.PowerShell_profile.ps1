@@ -10,7 +10,6 @@ Set-Alias l ls
 Set-Alias gc GitClone -Force
 Set-Alias gp GitPull -Force
 Set-Alias c CDDoubleDot
-Set-Alias c- RCDDoubleDot
 Set-Alias e ExplorerDot
 Set-Alias u WingetUpdate
 Set-Alias gd GitDiff
@@ -51,10 +50,6 @@ function GitPull {
 
 function CDDoubleDot {
 	cd..
-}
-
-function RCDDoubleDot {
-	cd -
 }
 
 function ExplorerDot {
