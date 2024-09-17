@@ -22,6 +22,7 @@ enable = true
 left = ["mode", "spinner", "file-name", "version-control", "file-modification-indicator"]
 right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending"]
 
+# https://github.com/helix-editor/helix/wiki/Keymap-brainstorm
 [keys.normal]
 "C-z" = "completion"
 "C-j" = "kill_to_line_start"
