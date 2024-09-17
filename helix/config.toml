@@ -31,6 +31,7 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 "F4" = [":format", ":w"]
 "F5" = [":w", ":sh taskkill /IM App.exe >nul & cmake --build out/build/x64-Debug -j8 && out\\build\\x64-Debug\\App.exe"]
 "minus" = [":w", ":sh taskkill /IM App.exe >nul & cmake --build out/build/x64-Debug -j8 >nul && out\\build\\x64-Debug\\App.exe >nul"]
+# "minus" = [":w", ":sh odin run . -o:none -debug -show-timings"]
 "=" = ":sh taskkill /F /IM App.exe >nul"
 
 [keys.normal." "]

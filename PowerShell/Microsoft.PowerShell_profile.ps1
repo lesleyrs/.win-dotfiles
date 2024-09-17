@@ -1,10 +1,16 @@
-# Set-Alias nv nvim -Force
-# Set-Alias gu gitui -Force
+Set-PSReadLineKeyHandler -Key 'Ctrl+q' -Function BeginningOfLine
+Set-PSReadLineKeyHandler -Key 'Ctrl+e' -Function EndOfLine
+Set-PSReadLineKeyHandler -Key 'Ctrl+k' -Function KillLine
+Set-PSReadLineKeyHandler -Key 'Ctrl+u' -Function BackwardKillLine
+Set-PSReadLineKeyHandler -Key 'Alt+Backspace' -Function BackwardKillWord
+
+Set-Alias nv nvim -Force
 Set-Alias l ls
 
 Set-Alias gc GitClone -Force
 Set-Alias gp GitPull -Force
 Set-Alias c CDDoubleDot
+Set-Alias c- RCDDoubleDot
 Set-Alias e ExplorerDot
 Set-Alias u WingetUpdate
 Set-Alias gd GitDiff
@@ -45,6 +51,10 @@ function GitPull {
 
 function CDDoubleDot {
 	cd..
+}
+
+function RCDDoubleDot {
+	cd -
 }
 
 function ExplorerDot {
