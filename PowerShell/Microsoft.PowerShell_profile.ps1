@@ -6,6 +6,7 @@ Set-PSReadLineKeyHandler -Key 'Alt+Backspace' -Function BackwardKillWord
 
 Set-Alias nv nvim -Force
 Set-Alias l ls
+Set-Alias which where.exe
 
 Set-Alias gc GitClone -Force
 Set-Alias gp GitPull -Force
