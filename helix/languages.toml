@@ -18,6 +18,7 @@ formatter = { command = "goimports" }
 [language-server.lobster]
 command = "node"
 args = ["lobster_lsp.js", "--stdio"]
+config = { lobster = { executable = 'lobster.exe', imports = [], experimental = false } }
 
 [[language]]
 name = "lobster"
