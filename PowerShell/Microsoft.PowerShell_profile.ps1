@@ -2,6 +2,7 @@ Set-PSReadLineKeyHandler -Key 'Ctrl+q' -Function BeginningOfLine
 Set-PSReadLineKeyHandler -Key 'Ctrl+e' -Function EndOfLine
 Set-PSReadLineKeyHandler -Key 'Ctrl+k' -Function KillLine
 Set-PSReadLineKeyHandler -Key 'Ctrl+u' -Function BackwardKillLine
+#pre-existing Set-PSReadLineKeyHandler -Key 'Alt+d' -Function KillWord
 Set-PSReadLineKeyHandler -Key 'Alt+Backspace' -Function BackwardKillWord
 
 Set-Alias nv nvim -Force
