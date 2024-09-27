@@ -24,7 +24,6 @@ right = ["diagnostics", "selections", "position", "file-encoding", "file-line-en
 
 # https://github.com/helix-editor/helix/wiki/Keymap-brainstorm
 [keys.normal]
-"C-z" = "completion"
 "C-j" = "kill_to_line_start"
 "C-k" = "kill_to_line_end"
 "A-j" = "delete_word_backward"
