@@ -6,7 +6,7 @@ Set-PSReadLineKeyHandler -Key 'Ctrl+u' -Function BackwardKillLine
 Set-PSReadLineKeyHandler -Key 'Alt+Backspace' -Function BackwardKillWord
 
 Set-Alias nv nvim -Force
-Set-Alias vi nvim
+Set-Alias vi vim
 Set-Alias l ls
 Set-Alias which where.exe
 
