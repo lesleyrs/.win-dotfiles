@@ -3,6 +3,7 @@
 $dotfiles = "$env:userprofile\.win-dotfiles"
 
 New-Item -ItemType Junction -Path "$env:userprofile\Documents\PowerShell" -Target "$dotfiles\PowerShell"
+New-Item -ItemType Junction -Path "$env:userprofile\vimfiles" -Target "$dotfiles\vimfiles"
 New-Item -ItemType Junction -Path "$env:appdata\helix" -Target "$dotfiles\helix"
 # New-Item -ItemType Junction -Path "$env:appdata\alacritty" -Target "$dotfiles\alacritty"
 New-Item -ItemType Junction -Path "$env:localappdata\nvim" -Target "$dotfiles\nvim"
