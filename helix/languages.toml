@@ -7,9 +7,11 @@ args = ["--compile-commands-dir=out/build/x64-Debug"]
 
 [[language]]
 name = "cpp"
+indent = { tab-width = 4, unit = "\t" }
 
 [[language]]
 name = "c"
+indent = { tab-width = 4, unit = "\t" }
 
 [[language]]
 name = "go"
