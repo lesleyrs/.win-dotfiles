@@ -20,11 +20,16 @@ Set-Alias gn GitNote
 Set-Alias gf GitFix
 Set-Alias gs GitStatus
 Set-Alias gl GitLogP -Force
+Set-Alias glo GitLogO
 Set-Alias time MeasureCmd
 
 function MeasureCmd {
 	$script = [ScriptBlock]::Create($args -join ' ')
 	Measure-Command { & $script }
+}
+
+function GitLogO {
+	git log --oneline --graph $args
 }
 
 function GitLogP {

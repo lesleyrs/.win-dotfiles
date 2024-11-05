@@ -14,6 +14,10 @@ name = "c"
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
+name = "java"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "go"
 formatter = { command = "goimports" }
 
