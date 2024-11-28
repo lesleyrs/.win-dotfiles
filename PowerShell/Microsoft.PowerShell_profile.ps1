@@ -21,11 +21,21 @@ Set-Alias gf GitFix
 Set-Alias gs GitStatus
 Set-Alias gl GitLogP -Force
 Set-Alias glo GitLogO
+Set-Alias gcd GitCleanDry
 Set-Alias time MeasureCmd
+Set-Alias wget CurlOL
+
+function CurlOL {
+	curl -OL $args
+}
 
 function MeasureCmd {
 	$script = [ScriptBlock]::Create($args -join ' ')
 	Measure-Command { & $script }
+}
+
+function GitCleanDry {
+	git clean -fXdn
 }
 
 function GitLogO {
