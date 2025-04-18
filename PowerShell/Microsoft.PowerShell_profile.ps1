@@ -12,48 +12,38 @@ Set-Alias which where.exe
 
 Set-Alias gc GitClone -Force
 Set-Alias gp GitPull -Force
-Set-Alias c CDDoubleDot
-Set-Alias e ExplorerDot
-Set-Alias u WingetUpdate
-Set-Alias gd GitDiff
-Set-Alias gf GitFix
-Set-Alias gs GitStatus
-Set-Alias gl GitLogP -Force
-Set-Alias glo GitLogO
-Set-Alias gcd GitCleanDry
-Set-Alias time MeasureCmd
-Set-Alias wget CurlOL
+Set-Alias gl GitLog -Force
 
-function CurlOL {
+function wget {
 	curl -OL @args
 }
 
-function MeasureCmd {
-	$script = [ScriptBlock]::Create(@args -join ' ')
+function time {
+	$script = [ScriptBlock]::Create($args -join ' ')
 	Measure-Command { & $script }
 }
 
-function GitCleanDry {
+function gcd {
 	git clean -fXdn
 }
 
-function GitLogO {
+function glo {
 	git log --oneline --graph @args
 }
 
-function GitLogP {
+function GitLog {
 	git log -p @args
 }
 
-function GitStatus {
+function gs {
 	git status @args
 }
 
-function GitDiff {
+function gd {
 	git status && git diff @args
 }
 
-function GitFix {
+function gf {
 	git add . && git commit -m @args && git push
 }
 
@@ -61,15 +51,15 @@ function GitPull {
 	git pull --rebase
 }
 
-function CDDoubleDot {
+function c {
 	cd..
 }
 
-function ExplorerDot {
+function e {
 	explorer .
 }
 
-function WingetUpdate {
+function u {
     winget update @args
 }
 
