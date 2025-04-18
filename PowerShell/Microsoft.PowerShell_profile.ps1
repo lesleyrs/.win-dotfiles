@@ -25,11 +25,11 @@ Set-Alias time MeasureCmd
 Set-Alias wget CurlOL
 
 function CurlOL {
-	curl -OL $args
+	curl -OL @args
 }
 
 function MeasureCmd {
-	$script = [ScriptBlock]::Create($args -join ' ')
+	$script = [ScriptBlock]::Create(@args -join ' ')
 	Measure-Command { & $script }
 }
 
@@ -38,23 +38,23 @@ function GitCleanDry {
 }
 
 function GitLogO {
-	git log --oneline --graph $args
+	git log --oneline --graph @args
 }
 
 function GitLogP {
-	git log -p $args
+	git log -p @args
 }
 
 function GitStatus {
-	git status $args
+	git status @args
 }
 
 function GitDiff {
-	git status && git diff $args
+	git status && git diff @args
 }
 
 function GitFix {
-	git add . && git commit -m $args && git push
+	git add . && git commit -m @args && git push
 }
 
 function GitPull {
@@ -70,9 +70,9 @@ function ExplorerDot {
 }
 
 function WingetUpdate {
-    winget update $args
+    winget update @args
 }
 
 function GitClone {
-	git clone $args
+	git clone @args
 }
