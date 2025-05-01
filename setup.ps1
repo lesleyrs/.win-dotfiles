@@ -10,3 +10,4 @@ New-Item -ItemType Junction -Path "$env:localappdata\nvim" -Target "$dotfiles\nv
 New-Item -ItemType SymbolicLink -Path "$env:appdata\Microsoft\Windows\Start Menu\Programs\Startup\remap.ahk" -Target "$dotfiles\remap.ahk"
 New-Item -ItemType SymbolicLink -Path "$env:userprofile\.gitconfig" -Target "$dotfiles\.gitconfig"
 # New-Item -ItemType SymbolicLink -Path "$env:userprofile\.wezterm.lua" -Target "$dotfiles\.wezterm.lua"
+New-Item -ItemType SymbolicLink -Path "$env:userprofile\.wslconfig" -Target "$dotfiles\.wslconfig"
