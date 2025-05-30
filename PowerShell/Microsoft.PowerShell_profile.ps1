@@ -7,7 +7,6 @@ Set-PSReadLineKeyHandler -Key 'Alt+Backspace' -Function BackwardKillWord
 
 Set-Alias nv nvim -Force
 Set-Alias vi vim
-Set-Alias l ls
 Set-Alias which where.exe
 
 Set-Alias gc GitClone -Force
@@ -51,6 +50,10 @@ function GitPull {
 	git pull --rebase
 }
 
+function GitClone {
+	git clone @args
+}
+
 function c {
 	cd..
 }
@@ -63,6 +66,6 @@ function u {
     winget update @args
 }
 
-function GitClone {
-	git clone @args
+function l {
+	ls -Force
 }
