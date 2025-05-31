@@ -67,5 +67,5 @@ function u {
 }
 
 function l {
-	ls -Force
+	ls @args -Force
 }
