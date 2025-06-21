@@ -30,12 +30,20 @@ function glo {
 	git log --oneline --graph @args
 }
 
+function gdf {
+	git diff --diff-filter=d @args
+}
+
 function GitLog {
 	git log -p @args
 }
 
 function gs {
 	git status @args
+}
+
+function gsa {
+	git status -uall @args
 }
 
 function gd {
