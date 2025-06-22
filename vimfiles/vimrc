@@ -1,3 +1,4 @@
 source $VIM/_vimrc
 
 packadd! editorconfig
+set shell=pwsh

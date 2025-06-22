@@ -13,6 +13,10 @@ Set-Alias gc GitClone -Force
 Set-Alias gp GitPull -Force
 Set-Alias gl GitLog -Force
 
+function fg {
+	exit
+}
+
 function wget {
 	curl -OL @args
 }
