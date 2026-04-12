@@ -3,7 +3,8 @@
 checkOnSave = { command = "clippy" }
 
 [language-server.clangd]
-args = ["--compile-commands-dir=out/build/x64-Debug"]
+command = "clangd"
+args = ["--header-insertion=never"]
 
 [[language]]
 name = "cpp"

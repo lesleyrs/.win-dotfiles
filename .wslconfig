@@ -1,2 +1,7 @@
 [wsl2]
 MaxCrashDumpCount=-1
+
+networkingMode=Mirrored
+
+[experimental]
+hostAddressLoopback=true
