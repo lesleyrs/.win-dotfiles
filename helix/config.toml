@@ -2,7 +2,7 @@ theme = "kanagawa"
 
 [editor]
 line-number = "relative"
-mouse = false
+mouse = true
 # end-of-line-diagnostics = "hint"
 
 [editor.inline-diagnostics]
